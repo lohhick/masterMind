@@ -11,6 +11,15 @@ function addRow(colors){
     }
     game.appendChild(newRow);
 }
-addRow(["aqua","blueviolet","red","black"])
-addRow(["red","black","blueviolet","aqua"])
-addRow(["black","red","aqua","blueviolet"])
+
+function createCode(colors){
+    list = []
+    for (let i in colors){
+        color = Math.floor(Math.random()*4)
+        list.push(colors[color])
+    }
+    return list
+}
+
+code = createCode(["aqua","blueviolet","red","black"])
+addRow(code)
