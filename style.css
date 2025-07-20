@@ -1,4 +1,18 @@
 .pions{
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+}
+
+.pawn1 {
+    background-color: aqua;
+}
+.pawn2 {
+    background-color: blueviolet;
+}
+.pawn3 {
+    background-color: red;
+}
+.pawn4 {
+    background-color: black;
 }
