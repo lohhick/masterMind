@@ -1,7 +1,7 @@
 function addRow(colors){
     game = document.getElementById("game");
     newRow = document.createElement("div");
-    newRow.className = "pions";
+    newRow.className = "row";
     for (let i in colors){
         console.log(i)
         pawn = document.createElement("div")
@@ -12,3 +12,5 @@ function addRow(colors){
     game.appendChild(newRow);
 }
 addRow(["aqua","blueviolet","red","black"])
+addRow(["red","black","blueviolet","aqua"])
+addRow(["black","red","aqua","blueviolet"])
