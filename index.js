@@ -2,13 +2,13 @@ function addRow(colors){
     game = document.getElementById("game");
     newRow = document.createElement("div");
     newRow.className = "row";
-    for (let i in colors){
-        console.log(i)
+    colors.forEach(color => {
         pawn = document.createElement("div")
         pawn.textContent = "__"
-        pawn.style.backgroundColor = colors[i]
+        pawn.style.backgroundColor = color
         newRow.appendChild(pawn)
-    }
+
+    });
     game.appendChild(newRow);
 }
 
