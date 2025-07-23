@@ -4,3 +4,8 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+.pawn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}

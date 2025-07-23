@@ -3,9 +3,7 @@ function addRow(colors){
     newRow = document.createElement("div");
     newRow.className = "row";
     colors.forEach(color => {
-        pawn = document.createElement("div")
-        pawn.textContent = "__"
-        pawn.style.backgroundColor = color
+        pawn = createPawn(color)
         newRow.appendChild(pawn)
 
     });
@@ -20,6 +18,15 @@ function createCode(colors){
     }
     return list
 }
+function createPawn(color){
+    pawn = document.createElement("button")
+    pawn.className = "pawn"
+    pawn.style.backgroundColor = color
+
+    return pawn
+}
+
 
 code = createCode(["aqua","blueviolet","red","black"])
 addRow(code)
+
